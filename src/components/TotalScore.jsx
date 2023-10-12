@@ -15,6 +15,7 @@ max-width: 200px;
         line-height: 100px;
     }
     p{
+
         font-size: 24px;
         font-weight: 500px;
     }
