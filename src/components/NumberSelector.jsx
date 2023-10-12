@@ -6,9 +6,10 @@ const NumberSelector = () => {
     console.log(setSelectedNumber);
     return (
         <div className='numbers'>
-            {arrNumber.map((num, i) =>
+            {arrNumber.map((value, i) =>
                 <Box key={i}
-                    onClick={() => setSelectedNumber(num)}>{num}
+                    isSelected={value === selectedNumber}
+                    onClick={() => setSelectedNumber(value)}>{value}
                 </Box>
             )}
 
@@ -30,5 +31,8 @@ font-weight: 700;
     cursor: pointer;
     transition: 0.2s ease-in;
 } */
+background-color: ${(props) => (props.isSelected ? "black" : "white")};
+color: ${(props) => (props.isSelected ? "white" : "black")}
 `
+
 export default NumberSelector
