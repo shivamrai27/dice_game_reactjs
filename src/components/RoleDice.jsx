@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import Rules from './Rules'
 
 const RoleDice = ({ currentDice, roleDice }) => {
 
