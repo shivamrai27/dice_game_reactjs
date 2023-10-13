@@ -53,12 +53,11 @@ place-items: center;
 font-size: 24px;
 font-weight: 700;
 /* transition: 0.2s ease-in; */
-/* &:hover{
-    background: black;
-    color: white;
+&:hover{
+   
     cursor: pointer;
-    transition: 0.2s ease-in;
-} */
+    
+}
 background-color: ${(props) => (props.isSelected ? "black" : "white")};
 color: ${(props) => (props.isSelected ? "white" : "black")}
 `
