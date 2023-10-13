@@ -55,7 +55,7 @@ const GamePlay = () => {
             />
             <div className='btns'>
                 <OutlineButton onClick={resetScore}>Reset</OutlineButton>
-                <Button onClick={() => setShowRules((prev) => !prev)}>{showRules ? "Hide" : "Show"}Show Rules</Button>
+                <Button onClick={() => setShowRules((prev) => !prev)}>{showRules ? "Hide " : "Show "}Rules</Button>
             </div>
             {showRules && <Rules />}
         </MainContainer>
